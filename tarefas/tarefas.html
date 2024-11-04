@@ -20,8 +20,16 @@
     </nav>
   </header>
   <main>
-  <section>
+  <section class="main">
     <h1 class="text-2xl">Gerencie suas tarefas</h1>
+    <div class="input-container">
+      <input type="text" id="new-task" placeholder="Adicionar nova tarefa">
+      <button onclick="addTask()">Adicionar</button>
+      <ul id="task-list">
+        <li>nova tarefa</li>
+        <li>outra tarefa</li>
+      </ul>
+    </div>
   </section>
   </main>
 </body>

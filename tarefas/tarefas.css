@@ -1,0 +1,42 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container{
+  justify-items: center;
+
+  #new-task{
+    width: 20rem;
+    padding: 0.5rem;
+    background-color: var(--bg-secundary-color);
+    text-align: center;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  button{
+    background-color: var(--bg-secundary-color);
+    color: var(--light-color);
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 2rem;
+  }
+
+  button:hover{
+    opacity: 0.7;
+  }
+  
+  ul li{
+    margin-bottom: 1rem;
+    list-style: none;
+    width: 25rem;
+    padding: 0.3rem;
+    background-color: var(--bg-secundary-color);
+    text-align: center;
+    border-bottom: 2px solid var(--light-color);
+    border-radius: 2rem;
+    font-size: 16px;
+  }
+}
