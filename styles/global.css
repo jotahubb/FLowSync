@@ -8,9 +8,27 @@
   --bg-color: #010D00;
   --light-color: #A6A6A6;
   --dark-color: #737373;
+
+  --font-family: "Poppins", serif;
+  --h1: 800 24px/135% var(--font-family);
+  --h2: 800 16px/140% var(--font-family);
+  --h3: 800 14px/140% var(--font-family);
+  --text: 400 16px/140% var(--font-family);
 }
 
 body {
   color: var(--light-color);
   background-color: var(--bg-color)
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: var(--dark-color);
+}
+
+img{
+    max-width: 100%;
 }

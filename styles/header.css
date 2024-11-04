@@ -1,0 +1,25 @@
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+
+  #logo-flowSync{
+    height: 5rem;
+  }
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+
+  li{
+    margin: 1rem;
+    list-style: none;
+  }
+}
+
+li img{
+  margin-right: 0.5rem;
+  height: 16px;
+}
