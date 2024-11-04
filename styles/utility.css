@@ -6,9 +6,14 @@
 
 .text-xl {
   font: var(--h2);
+  letter-spacing: 4px;
+  margin-bottom: 3rem;
 }
 
 .text-lg {
   font: var(--h3);
+  letter-spacing: 4px;
 }
+
+
 

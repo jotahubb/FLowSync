@@ -1,11 +1,14 @@
 section {
-  width: 100wh;
   margin: 5rem;
   
   img {
-    height: 400px;
-    border: 3px solid #272727;
+    height: 30rem;
+    border: 0.2rem solid var(--bg-secundary-color);
     border-radius: 1rem;
+
+    a{
+      color: var(--dark-color);
+    }
   }
 
   ul li {
@@ -18,4 +21,38 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+#ferramentas {
+  display: flex;
+  justify-items: center;
+}
+
+#ferramentas div{
+  width: 32rem;
+  padding: 2rem;
+  margin-right: 0.8rem;
+  background-color: var(--bg-secundary-color);
+  border: solid 0.1rem var(--dark-color);
+  border-radius: 1rem;
+
+  h3{
+    text-align: center;
+    margin-bottom: 1rem
+  }
+
+  p{
+    margin-bottom: 1.5rem;
+  }
+
+  .btn{
+    display: block;
+    width: 100px; 
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: var(--bg-color);
+    border: 0.1rem solid var(--light-color);
+    border-radius: 999px;
+    text-align: center;
+  }
 }
