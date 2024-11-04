@@ -10,15 +10,16 @@
   --dark-color: #737373;
 
   --font-family: "Poppins", serif;
-  --h1: 800 24px/135% var(--font-family);
-  --h2: 800 16px/140% var(--font-family);
-  --h3: 800 14px/140% var(--font-family);
-  --text: 400 16px/140% var(--font-family);
+  --h1: 300 5rem/135% var(--font-family);
+  --h2: 800 1rem/140% var(--font-family);
+  --h3: 800 0.8rem/140% var(--font-family);
+  --text: 400 1.2rem/140% var(--font-family);
 }
 
 body {
   color: var(--light-color);
-  background-color: var(--bg-color)
+  background-color: var(--bg-color);
+  font: var(--text)
 }
 
 a {

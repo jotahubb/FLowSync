@@ -1,0 +1,14 @@
+.text-2xl {
+  font: var(--h1);
+  letter-spacing: 4px;
+  margin-bottom: 3rem;
+}
+
+.text-xl {
+  font: var(--h2);
+}
+
+.text-lg {
+  font: var(--h3);
+}
+
