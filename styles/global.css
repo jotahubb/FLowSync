@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color: #010D00;
+  --light-color: #A6A6A6;
+  --dark-color: #737373;
+}
+
+body {
+  color: var(--light-color);
+  background-color: var(--bg-color)
+}
