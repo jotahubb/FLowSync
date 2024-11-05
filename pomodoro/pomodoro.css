@@ -1,0 +1,38 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  margin-right: 1rem;
+  background-color: var(--bg-secundary-color);
+  color: var(--light-color);
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+button:hover{
+  opacity: 0.7;
+}
+
+.relogio{
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-secundary-color);
+  color: var(--light-color);
+  border-radius: 2rem;
+  height: 12rem;
+}
+
+.timer{
+  margin-top: 5rem;
+  font-size: 5rem;
+  text-align: center;
+}

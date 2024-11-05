@@ -19,5 +19,67 @@
       </ul>
     </nav>
   </header>
+  <main>
+    <section>
+      <h1 class="text-2xl">Estude focado</h1>
+      <div class="controls">
+      <button onclick="startPomodoro()">Pomodoro</button>
+      <button onclick="startShortBreak()">Intervalo Curto</button>
+      <button onclick="startLongBreak()">Intervalo Longo</button>
+      <button onclick="resetTimer()">Reiniciar</button>
+      </div>
+      <section class="relogio">
+      <div class="timer" id="timer">25:00</div>
+      </section>
+    </section>
+  </main>
+  <script>
+      let timerInterval;
+      let timeRemaining;
+      
+      function updateDisplay() {
+          const minutes = Math.floor(timeRemaining / 60);
+          const seconds = timeRemaining % 60;
+          document.getElementById('timer').textContent = 
+              `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      }
+
+      function startTimer(duration) {
+          if (timerInterval) clearInterval(timerInterval); // Limpa qualquer timer ativo
+
+          timeRemaining = duration;
+          updateDisplay();
+
+          timerInterval = setInterval(() => {
+              if (timeRemaining > 0) {
+                  timeRemaining--;
+                  updateDisplay();
+              } else {
+                  clearInterval(timerInterval);
+                  alert("Tempo acabou! Hora de mudar de fase.");
+              }
+          }, 1000);
+      }
+
+      function startPomodoro() {
+          startTimer(25 * 60); // 25 minutos
+      }
+
+      function startShortBreak() {
+          startTimer(5 * 60); // 5 minutos para intervalo curto
+      }
+
+      function startLongBreak() {
+          startTimer(15 * 60); // 15 minutos para intervalo longo
+      }
+
+      function resetTimer() {
+          clearInterval(timerInterval);
+          timerInterval = null;
+          document.getElementById('timer').textContent = "25:00"; // Reseta para o Pomodoro padrão
+      }
+
+      updateDisplay(); // Mostra o tempo inicial na tela
+  </script>
 </body>
 </html>
